@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -18,14 +19,17 @@ import com.example.basicapp.databinding.FragmentLoginBinding;
 public class LoginFragment extends Fragment {
 
     private FragmentLoginBinding binding;
+//    声明控件
+    private EditText mUsername;
+    private EditText mPassword;
 
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         binding = FragmentLoginBinding.inflate(inflater, container, false);
+
         return binding.getRoot();
 
     }
@@ -46,7 +50,7 @@ public class LoginFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-//        binding = null;
+        binding = null;
     }
 
 }
