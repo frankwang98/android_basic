@@ -2,8 +2,10 @@
     <string name="app_name">basicapp</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
+    <string name="login_fragment_label">登录页面</string>
     <string name="first_fragment_label">状态页面</string>
     <string name="second_fragment_label">控制页面</string>
+    <string name="login">Login</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 

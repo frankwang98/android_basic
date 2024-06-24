@@ -3,8 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/LoginFragment">
 
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.basicapp.LoginFragment"
+        android:label="登录页面"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.basicapp.FirstFragment"

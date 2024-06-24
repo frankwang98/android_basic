@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Basicapp"
         tools:targetApi="31">
+<!--        启动文件-->
         <activity
             android:name=".MainActivity"
             android:exported="true"
